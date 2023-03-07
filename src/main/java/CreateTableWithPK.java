@@ -57,7 +57,7 @@ public class CreateTableWithPK {
          *
          * NOTE: The "id" column is what we are going to define as the primary key.
          */
-        String sql = FileUtil.parseSQLFile("problem1.sql");
+        String sql = "create table song (id SERIAL PRIMARY KEY, title varchar(100), artist varchar(100));";
 
         try {
             Connection connection = ConnectionUtil.getConnection();
